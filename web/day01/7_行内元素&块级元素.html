@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>行内元素&块级元素</title>
+    <style type="text/css">
+    	span{
+    		border:1px solid red;
+    		width:100px;
+    		height:100px;
+    		margin-right:5px;
+    	}
+    	#s1{
+    		margin-right:10px;
+    	}
+    	#s2{
+    		margin-left:10px;
+    	}
+    	div{
+    		border:1px solid green;
+    		width:150px;
+    		height:100px;
+    	}
+    	#d1{
+    		margin-bottom:10px;
+    	}
+    	#d2{
+    		margin-top:20px;
+    	}
+    	#d3{
+    		border:1px solid yellow;
+    		width:50px;
+    		height:20px;
+    		margin-bottom:10px;
+    	}
+    	
+    	img{
+    		width:50px;
+    		height:50px;
+    		margin:10px;
+    		padding:10px;
+    	}
+    </style>
+
+</head>
+<body>
+    <!--
+        div:每一个div占满一整行。块级标签
+        	可以设置宽高，若未设置，由内容撑开
+        	可以设置上下左右外边距
+        	可以设置上下左右内边距
+        	与其他元素的距离由外边距大的元素决定。(塌陷)
+        	块级元素可以包含行内元素，也可以包含块级元素
+        	
+        span：文本信息在一行展示，行内标签 内联标签
+        	  不能设置宽高，宽度由内容撑开
+        	  不能设置上下外边距，可以设置左右外边距
+        	  可以设置内边距（上下内边距无效）
+        	  与其他元素的距离是两者外边距之和。
+        	  行内元素一般不包含块级元素
+        	  
+       	img: 行内块元素
+       		既有行内元素的特性(水平排列)，
+       		又有块级元素的特性(可以设置宽高，设置边距 )
+     -->
+
+    <span id="s1">此文字需要设置样式!</span>
+    <span id="s2">以此标签用作样式的控制</span>
+
+    <hr>
+    <div id="d1">此文字<span>需要</span><span>设置</span>样式</div>
+    <div id="d2">以此<div id="d3">标签</div>用作样式的控制</div>
+	<hr>
+	<img src="../1.jpg"  />
+	<img src="../1.jpg"  />
+
+</body>
+</html>

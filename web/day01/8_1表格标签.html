@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签</title>
+</head>
+<body>
+	<!-- cellpadding 内容与单元格边框之间的距离  
+		 cellspacing 单元格与单元格之间的距离
+	-->
+    <table border=1" width="50%" cellpadding="0" cellspacing="0" bgcolor="#faebd7" align="center">
+        <tr>
+           <!-- 
+            <td>编号</td>
+            <td>姓名</td>
+            <td>成绩</td>
+            -->
+            <th>编号</th>
+            <th>姓名</th>
+            <th>成绩</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>寒冰</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>蛮王</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+    <hr>
+	<!-- 演示caption thead tbody tfoot-->
+    <table border="1" width="50%" cellpadding="0" cellspacing="0" bgcolor="#faebd7" align="center">
+        <thead>
+            <caption>学生信息表</caption>
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>成绩</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr bgcolor="#7fffd4" align="center">
+                <td>1</td>
+                <td>寒冰</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>蛮王</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+        <tfoot bgcolor="blue">
+            <tr>
+                <td>3</td>
+                <td>德玛</td>
+                <td>10</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    
+    <!-- 演示 rowspan colspan -->
+    <table border="1" width="50%" cellpadding="0" cellspacing="0" bgcolor="#faebd7" align="center">
+        <tr>
+            <th rowspan="2">编号</th>
+            <th>姓名</th>
+            <th>成绩</th>
+        </tr>
+        <tr>
+            <td>寒冰</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td colspan="2">蛮王</td>
+        </tr>
+    </table>
+    <hr>
+    <table border=1" width="50%" cellpadding="0" cellspacing="0" bgcolor="#faebd7" align="center">
+        <tr>
+            <th>编号</th>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+         	<th>姓名</th>
+            <td>寒冰</td>
+            <td>蛮王</td>
+        </tr>
+        <tr>
+        	<th>成绩</th>
+            <td>99</td>
+            <td>59</td>
+        </tr>
+        <tr>
+        	<th>其他</th>
+            <td>
+            	<ol>
+            		<li>HTML</li>
+            		<li>CSS</li>
+            		<li>JS</li>
+            	</ol>
+            </td>
+            <td>
+            	<table border="1" cellpadding="0" cellspacing="0" align="center">
+            		<tr><th>语文</th><th>数学</th></tr>
+            		<tr><td>77</td><td>90</td></tr>
+            		<tr><td>92</td><td>65</td></tr>
+            	</table>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+</body>
+</html>
